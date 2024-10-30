@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+    background-color: #07051e;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    margin: 1rem 0;
+}
+
+.nav img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav button{
+    width: 4rem;
+    height: 4rem;
+    background-color: #07051e;
+    color: white;
+    border-color: #07051e;
+    font-size: 2rem;
+}
+
+.menu_oculto {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.menu_oculto.active {
+    left: 0;
+}
+
+.x {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contenido_menu {
+    text-align: center;
+    background-color: #2596be;
+}
+
+.contenido_menu a {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    background-color: #2596be;
+}
+
+.portafolio {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.portafolio h1 {
+    font-size: 3rem;
+    color: #00BFFF;
+    margin-bottom: 3rem;
+}
+
+.portafolio p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #e6e6e6;
+}
+
+.proyectos {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.proyecto {
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1a1a2e;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.proyecto h2 {
+    color: #00BFFF;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.proyecto p {
+    color: #d4d4d4;
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.links_proyecto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.links_proyecto a {
+    font-size: 1rem;
+    color: #2596be;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #2596be;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.links_proyecto a:hover {
+    background-color: #2596be;
+    color: white;
+}

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+    background-color: #07051e;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    margin: 1rem 0;
+}
+
+.nav img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav button{
+    width: 4rem;
+    height: 4rem;
+    background-color: #07051e;
+    color: white;
+    border-color: #07051e;
+    font-size: 2rem;
+}
+
+.menu_oculto {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.menu_oculto.active {
+    left: 0;
+}
+
+.x {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contenido_menu {
+    text-align: center;
+    background-color: #2596be;
+}
+
+.contenido_menu a {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    background-color: #2596be;
+}
+
+.contenido-estudios {
+    width: 100%;
+    margin: 3rem auto;
+    text-align: left;
+    color: white;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-estudios h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2596be;
+}
+
+.contenido-estudios img{
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+.estudio {
+    width: 80%;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #1b1b2e;
+    border-radius: 0.5rem;
+}
+
+.estudio h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.fecha_lugar {
+    font-size: 1.1rem;
+    color: #00BFFF;
+    margin-bottom: 1rem;
+}
+
+.estudio p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+}

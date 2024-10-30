@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2do corte</title>
+    <link rel="stylesheet" href="Estilos/Style_index.css">
+    <link rel="shortcut icon" href="Img/" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <a href="index.html"><img src="Img/logo.png" alt=""></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </div>
+
+        <div class="menu_oculto" id="menu_oculto">
+            <button class="x" onclick="toggleMenu()">✖</button>
+            <div class="contenido_menu">
+                <a href="index.html">Acerca de</a>
+                <a href="estudios.html">Estudios</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div class="principal">
+            <img src="Img/Picsart_24-10-28_20-55-42-412.png" alt="">
+            <div class="texto">
+                <h1>Laly Yiseth Guayara Rada</h1>
+                <p>Soy Laly Yiseth Guayara Rada, nací el 23 de mayo de 2005, tengo 19 años y estudio Ingeniería de Sistemas en la universidad Minuto de Dios en Girardot. Me apasiona la inteligencia artificial y el desarrollo web. Disfruto mucho del tiempo en casa, donde me entretengo explorando nuevas recetas, experimentando con la fotografía en interiores y editando imágenes en el ordenador. También me gusta leer novelas de ciencia ficción y misterio, y ver series sobre tecnología y temas intrigantes. Aunque no soy de salir mucho, me encanta conectar con amigos y compartir ideas, creando momentos de diversión y risas juntos.</p>
+            </div>
+        </div>
+
+        <div class="infopersonal">
+            <div class="info">
+                <h1>Email</h1>
+                <p>lalugua23@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <h1>Celular</h1>
+                <p>+57 313 8973629</p>
+            </div>
+
+            <div class="info">
+                <h1>Instagram</h1>
+                <p>@usuario</p>
+            </div>
+
+            <div class="info">
+                <h1>Github</h1>
+                <p>@lalugua</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu_oculto").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Laly Guayara</title>
+    <link rel="stylesheet" href="Estilos/Style_contacto.css">
+    <link rel="shortcut icon" href="Img/" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <a href="index.html"><img src="Img/logo.png" alt=""></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </div>
+
+        <div class="menu_oculto" id="menu_oculto">
+            <button class="x" onclick="toggleMenu()">✖</button>
+            <div class="contenido_menu">
+                <a href="index.html">Inicio</a>
+                <a href="acerca.html">Acerca de</a>
+                <a href="estudios.html">Estudios</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div class="contenido_contacto">
+            <h1>Contacto</h1>
+            <img src="Img/agenda.png" alt="">
+            <p>¡Estoy aquí para ayudarte! Puedes contactarme a través de las siguientes plataformas:</p>
+
+            <div class="informacion_contacto">
+                <div class="info">
+                    <h2>Teléfono</h2>
+                    <p>Llámame o envíame un Whatsapp!</p>
+                    <a href="https://wa.me/573138973629?text=Hola%20Laly,%20vi%20tu%20pagina%20web%20y%20queria%20hablar%20contigo!"><p>+57 313 897 3629</p></a>
+                </div>
+                <div class="info">
+                    <h2>Email</h2>
+                    <p>Enviame un correo!</p>
+                    <a href="mailto:laly.guayara@example.com"><p>lalugua23@gmail.com</p></a>
+                </div>
+                <div class="info">
+                    <h2>Ubicación</h2>
+                    <p>San Luis, Tolima</p>
+                    <p>Colombia</p>
+                </div>
+            </div>
+
+            <div class="redes_sociales">
+                <h2>Redes Sociales</h2>
+                <div class="iconos_redes_sociales">
+                    <a href="https://facebook.com" target="_blank" class="boton facebook">Facebook</a>
+                    <a href="https://www.instagram.com/guayara10_r/" target="_blank" class="boton instagram">Instagram</a>
+                    <a href="https://github.com/lalugua" target="_blank" class="boton github">GitHub</a>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <h2>Envíame un Mensaje</h2>
+                <form method="POST" action="" id="formulario" enctype="multipart/form-data">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    
+                    <button type="submit" class="boton_enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu_oculto").classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            alert("¡Ya se envió tu mensaje!");
+
+            window.location.href = "contacto.html";
+        });
+    </script>
+</body>
+</html>

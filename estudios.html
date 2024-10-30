@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios - Laly Guayara</title>
+    <link rel="stylesheet" href="Estilos/Style_estudios.css">
+    <link rel="shortcut icon" href="Img/" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <a href="index.html"><img src="Img/logo.png" alt=""></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </div>
+
+        <div class="menu_oculto" id="menu_oculto">
+            <button class="x" onclick="toggleMenu()">✖</button>
+            <div class="contenido_menu">
+                <a href="index.html">Acerca de</a>
+                <a href="estudios.html">Estudios</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div class="contenido-estudios">
+            <h1>Mis Estudios</h1>
+
+            <img src="Img/estudio.jpg" alt="">
+
+            <div class="estudio">
+                <h2>Básica Primaria</h2>
+                <p class="fecha_lugar">2009 - 2015 | Institución Educativa San Luis Gonzaga</p>
+                <p>Durante mi educación primaria, adquirí una sólida base en habilidades fundamentales como la lectura, la escritura y las matemáticas, lo cual fue esencial para mi desarrollo académico. Estas habilidades no solo me permitieron comprender el mundo a mi alrededor, sino que también me ayudaron a desarrollar una curiosidad natural y una pasión por aprender. Además, fue en esta etapa cuando empecé a descubrir mi interés por la tecnología. A través de clases de informática, donde aprendí conceptos básicos de computación y exploré programas sencillos, desarrollé una fascinación inicial por el mundo digital y sus posibilidades. Esta experiencia temprana con la tecnología sentó las bases para el camino que elegiría en el futuro.</p>
+            </div>
+
+            <div class="estudio">
+                <h2>Bachillerato</h2>
+                <p class="fecha_lugar">2015 - 2021 | Institución Educativa San Luis Gonzaga</p>
+                <p>Durante el bachillerato, tuve la oportunidad de profundizar mis conocimientos en ciencias y matemáticas, áreas que siempre me habían interesado. En particular, los cursos de física y química me ayudaron a comprender principios fundamentales del mundo natural, permitiéndome ver cómo se aplican las matemáticas para resolver problemas complejos y entender fenómenos físicos. Además, participé en talleres de programación básica, donde aprendí a escribir mis primeras líneas de código y a comprender la lógica detrás del desarrollo de software. Estas experiencias no solo consolidaron mi interés en el desarrollo tecnológico, sino que también me motivaron a continuar explorando el impacto que la tecnología puede tener en diversas áreas del conocimiento y la vida cotidiana.</p>
+            </div>
+
+            <div class="estudio">
+                <h2>Técnico en Asistencia Administrativa</h2>
+                <p class="fecha_lugar">2020 - 2021 | Servicio Nacional de Aprendizaje SENA</p>
+                <p>El técnico en Asistencia Administrativa me proporcionó una comprensión integral de los procesos administrativos y de gestión dentro de una organización. Durante este curso, adquirí habilidades esenciales en áreas como la contabilidad, la gestión de recursos humanos y la planificación estratégica. Aprendí a manejar herramientas informáticas que son fundamentales en el entorno laboral, como procesadores de texto, hojas de cálculo y software de gestión de proyectos. <br><br>Además, me enfoqué en el desarrollo de habilidades comunicativas y organizativas, lo que me permitió aprender a redactar informes claros y concisos, así como a coordinar reuniones y eventos de manera efectiva. La formación incluyó prácticas en entornos reales, donde pude aplicar mis conocimientos en situaciones del día a día, colaborando con equipos para mejorar la eficiencia operativa. Esta experiencia me ayudó a entender la importancia de un buen soporte administrativo en el funcionamiento exitoso de una empresa, y me ha preparado para enfrentar desafíos en el mundo laboral con confianza y profesionalismo.</p>
+            </div>
+
+            <div class="estudio">
+                <h2>Técnico en Sistemas</h2>
+                <p class="fecha_lugar">2021 - 2022 | CECONTEC Guamo</p>
+                <p>El técnico en Sistemas me proporcionó una sólida base en áreas clave de la tecnología y la informática. Durante mis estudios, profundicé en el análisis, diseño y mantenimiento de sistemas computacionales, así como en la programación y gestión de bases de datos. También aprendí sobre la configuración y seguridad de redes de computadoras. <br><br>La formación incluyó proyectos prácticos que me permitieron aplicar mis conocimientos en situaciones reales, trabajando en equipo para desarrollar soluciones tecnológicas. Esta experiencia me ha preparado para enfrentar los desafíos del campo de los sistemas y contribuir al desarrollo de soluciones innovadoras.</p>
+            </div>
+
+            <div class="estudio">
+                <h2>Universidad</h2>
+                <p class="fecha_lugar">2023 - Actualidad | Universidad Minuto de Dios Girardot</p>
+                <p>Actualmente, estoy cursando la carrera de Ingeniería de Sistemas y en este cuarto semestre he tenido la oportunidad de desarrollar habilidades avanzadas en programación de software y programación web. He profundizado en varios lenguajes de codificación, lo que me ha permitido dominar conceptos clave y aplicar las mejores prácticas en el desarrollo de aplicaciones. <br><br>Mi formación incluye la creación de sitios web, donde he aprendido a implementar tecnologías front-end y back-end, lo que me ha brindado una comprensión integral de cómo funcionan las aplicaciones en línea. Estas experiencias han fortalecido mi pasión por la tecnología y me han motivado a seguir aprendiendo y creciendo en este campo en constante evolución, enfocándome en el desarrollo de software y la programación web.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu_oculto").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

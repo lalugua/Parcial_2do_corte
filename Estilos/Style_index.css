@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+    background-color: #07051e;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    margin: 1rem 0;
+}
+
+.nav img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav button{
+    width: 4rem;
+    height: 4rem;
+    background-color: #07051e;
+    color: white;
+    border-color: #07051e;
+    font-size: 2rem;
+}
+
+.menu_oculto {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.menu_oculto.active {
+    left: 0;
+}
+
+.x {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contenido_menu {
+    text-align: center;
+    background-color: #2596be;
+}
+
+.contenido_menu a {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    background-color: #2596be;
+}
+
+.principal{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.principal img{
+    width: 28rem;
+    height: 35rem;
+    border-radius: 0.5rem;
+}
+
+.texto{
+    width: 50%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.texto p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.infopersonal{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.info{
+    width: 20%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    border: 0.1rem solid white;
+    padding: 1rem 1rem;
+}
